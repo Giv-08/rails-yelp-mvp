@@ -3,12 +3,11 @@
 <h1>Restaurants</h1>
 
 <div id="restaurants">
+<div>
   <% @restaurants.each do |restaurant| %>
     <%= render restaurant %>
-    <p>
-      <%= link_to "Show this restaurant", restaurant %>
-    </p>
+      <%= link_to "Show this restaurant", restaurant%>
   <% end %>
+      <p class='new-btn'><%= link_to "New restaurant", new_restaurant_path %></p>
+      </div>
 </div>
-
-<%# link_to "New restaurant", new_restaurant_path %>

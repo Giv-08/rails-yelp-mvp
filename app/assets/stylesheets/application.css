@@ -1,15 +1,75 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Signika+Negative:wght@300..700&display=swap');
+
+body {
+  font-family: "Signika Negative", sans-serif;
+  color: rgb(187, 56, 83);
+  letter-spacing: 1px;
+  background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?cs=srgb&dl=pexels-pixabay-260922.jpg&fm=jpg);
+}
+
+#restaurants {
+  display: flex;
+  width: 80%;
+  height: 100%;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, 0.7);
+  justify-content: center;
+  margin-left: 120px;
+}
+
+div {
+  color: white;
+}
+
+h1 {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  background: antiquewhite;
+  border: white 2px solid;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+  color: rgb(226, 185, 185);
+  margin: 30px;
+}
+ul {
+  background-color:#ffe5cbad;
+  margin: 40px;
+  text-align: center;
+  list-style: none;
+}
+a {
+  color: rgb(204, 42, 9);
+  background-color: rgba(223, 165, 121, 0.859);
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+  margin: 10px;
+}
+
+a:hover {
+  background-color: rgba(249, 225, 207, 0.859);
+  color: rgb(241, 119, 94);;
+  transition: 400ms ease-in-out;
+  cursor: pointer;
+}
+
+p {
+text-align: center;
+}
+
+.new-btn {
+  display: flex;
+  justify-content: center;
+  color: rgb(75, 28, 28);
+}
+
+form {
+  color: white;
+}
